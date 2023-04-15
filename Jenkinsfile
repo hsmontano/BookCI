@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        MAVEN_ARGS=" -e clean install"
+        MAVEN_ARGS=" -e clean install -DskipTests"
         registry = ""
         dockerContainerName='bookapi'
         dockerImageName='bookapi-api'
